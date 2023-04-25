@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+	<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+	<title>Jakub Sokołowski - strona główna</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="body">
+	<header class="header">Jakub Sokołowski &nbsp; <button class="hamburger">MENU</button> </header>
+	<nav class="topnav" id="main_menu">
+			<button class="close_menu_button" id="close_menu">X</button>
+            &nbsp;
+			<div class="menu_item"><a href="index.html">Strona&nbsp;główna</a></div>
+			&nbsp; &nbsp;  
+			<div class="menu_item current_link"><a href="projekty.html">Zrealizowane&nbsp;projekty</a></div>
+			&nbsp; &nbsp; 
+			<div class="menu_item"><a href="informatyka.html">Zainteresowania&nbsp;informatyczne</a></div>
+			&nbsp; &nbsp; 
+            <div class="menu_item"><a href="hobby.html">Inne&nbsp;zainteresowania</a></div>
+            &nbsp;
+		</nav>
+		<noscript>
+			<div class="noscript_nav">
+				<button class="close_menu_button" id="close_menu">X</button>
+				&nbsp;
+				<div class="menu_item"><a href="index.html">Strona&nbsp;główna</a></div>
+				&nbsp; &nbsp;  
+				<div class="menu_item current_link"><a href="projekty.html">Zrealizowane&nbsp;projekty</a></div>
+				&nbsp; &nbsp; 
+				<div class="menu_item"><a href="informatyka.html">Zainteresowania&nbsp;informatyczne</a></div>
+				&nbsp; &nbsp; 
+				<div class="menu_item"><a href="hobby.html">Inne&nbsp;zainteresowania</a></div>
+				&nbsp;
+			</div>
+		</noscript>
+		<main>
+			<article>
+				  <h1>Moje projekty</h1>
+				  <p>&nbsp; W czasie moich studiów, jak i w czasie wolnym udało mi się zrealizować sporo
+					  ciekawych projektów i zadań. Wśród nich znajdowały się na przykład:
+					  <ul>
+						  <li>aplikacja do gry w chińskie warcaby</li>
+						  <li>prosty program do rysowania</li>
+						  <li>aplikacja bazodanowa obsługi schroniska dla psów</li>
+						  <li>solver do łamigłówki Sudoku</li>
+						  <li>implementacje różnych metod kompresji bezstratnej <br>
+							  (np. kodowanie arytmetyczne, algorytm LZW)</li>
+						  <li>aplikacja webowa do gry w szachy</li>
+						  <li>program do rozwiązywania problemu komiwojażera za pomocą metaheurystyk</li>
+						  <li>prosta powłoka systemu Linux</li>
+					  </ul>
+					 Na tej stronie opisałem najciekawsze ze zrealizownych przeze mnie projektów.
+			</article>
+			<div class="my_grid">
+				<article class="grid_item1">
+					<h1>Solver sudoku</h1>
+					<p>&nbsp; Program rozwiązuje sudoku używając algorytmu przeszukiwania z nawrotami. Za jego pomocą
+						można wczytać plik opisujący diagram do rozwiązania, wyświetlić łamigłówkę przed rozwiązaniem a następnie
+						z wpisanymi brakującymi liczbami. Jeśli dany przykład posiada więcej niż jedno rozwiązanie, to program
+						znajdzie je wszystkie. Solver został napisany w języku C.  
+					</p> 
+				</article>
+				<!-- <img src="sudoku2_base.png 584w" srcset="sudoku2_mid.png 876w" alt="sudoku" class="grid_item2"> -->
+				<picture class="grid_box2">
+					<source media="(min-width:800px)" srcset="img/sudoku2.png">
+					<img src="img/sudoku2_base.png" alt="sudoku" class="grid_item2">
+				</picture>
+			</div>
+			<div class="my_grid">
+				<article class="mid_grid_item1">
+					<h1>Aplikacja do gry w chińskie warcaby</h1>
+					<p>&nbsp; Aplikacja została stworzona w języku Java. Działa ona na zasadzie 
+						architektury klient-serwer. Umożliwia uruchomienie serwera dla 2, 3, 4 lub
+						6 graczy a następnie podłączenie się do niego i rozegranie partii. Serwer weryfikuje
+						poprawność ruchów graczy, informuje ich, kiedy mają wykonać swoje
+						posunięcie lub kiedy rozgrywka się zakończy.
+				</article>
+				<picture class="mid_grid_box2">
+					<source media="(min-width:800px)" srcset="img/trylma.png">
+					<img src="img/trylma_base.png" alt="trylma" class="mid_grid_item2">
+				</picture>
+			</div>
+			<div class="my_grid">
+				<article class="grid_item1">
+					<h1>Program rozwiązujący TSP za pomocą metaheurystyk</h1>
+					<p>&nbsp; Zadaniem programu jest znajdowanie przybliżonych rozwiązań problemu
+						komiwojażera za pomocą różnych heurystyk i algorytmów metaheurystycznych. Możliwe jest
+						wczytanie instancji problemu z biblioteki TSPLIB lub wygenerowanie losowej instancji.
+						Wśród zaimplementowaych algorytmów były między innymi algorytm najbliższego sąsiada,
+						2-opt, przeszukiwanie tabu (tabu search) oraz algortym genetyczny. W przypadku instancji
+						problemu, w których wierzchołki odpowiadają punktom na płaszczyźnie, możliwe było również
+						zwizualizowanie znalezionego rozwiązania (na rysunku znajduje się rozwiązanie znalezione przez
+						program dla instancji a280.tsp z biblioteki TSPLIB). Program został stworzony w Javie.
+					</p>
+				</article>
+				<picture class="grid_box2">
+					<source media="(min-width:800px)" srcset="img/tsp3.png">
+					<img src="img/tsp3_base.png" alt="tsp" class="grid_item2">
+				</picture>
+			</div>
+			<div class="big_grid">
+				<article class="big_grid_item1">
+					<h1>Aplikacja webowa do gry w szachy</h1>
+					<p>&nbsp; 
+						Projekt ten był tworzony w pięcioosobowej grupie w ramach przedmiotu
+						<i>Programowanie zespołowe</i>. Częścią projektu, przy której najwięcej
+						pracowałem było stworzenie własnego silnika szachowego,
+						który działa na podstawie algorytmu min-max z użyciem tzw. alfa-beta obcięć.
+						Silnik powstał w języku Java, a następnie został przystosowany do działania
+						na zasadzie API internetowego za pomocą frameworka Spring. Obok znajduje się kawałek
+						kodu odpowiadający za wyznaczanie ruchów wieży.
+					</p>
+				</article>
+				<img src="img/chess.png" height="375" width="774" alt="chess" class="big_grid_item2">
+				<div class="big_grid_item3">
+					<p class="code_block">
+						private static void addRookMoves(Board board, int beginCol, int beginRow, PieceColor myColor, List&lt;Move&gt; possibleMoves) {<br>
+							&emsp;PieceColor oppColor = opponentColor(myColor);<br>
+							<br>
+							&emsp;int i = 1;<br>
+							&emsp;while (onChessboard((beginCol + i), beginRow) && freeSquare(board, (beginCol + i), beginRow)) {<br>
+								&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, (beginCol + i), beginRow));<br>
+								&emsp;&emsp;i++;<br>
+								&emsp;}<br>
+								&emsp;if (onChessboard((beginCol + i), beginRow)) {<br>
+										&emsp;&emsp;if (board.squares[(beginCol + i)][beginRow].getColor() == oppColor) {<br>
+											&emsp;&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, (beginCol + i), beginRow));<br>
+											&emsp;&emsp;}<br>
+										&emsp;}<br>
+							<br>	
+							&emsp;i = 1;<br>
+							&emsp;while (onChessboard((beginCol - i), beginRow) && freeSquare(board, (beginCol - i), beginRow)) {<br>
+								&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, (beginCol - i), beginRow));<br>
+								&emsp;&emsp;i++;<br>
+								&emsp;}<br>
+								&emsp;if (onChessboard((beginCol - i), beginRow)) {<br>
+									&emsp;&emsp;if (board.squares[(beginCol - i)][beginRow].getColor() == oppColor) {<br>
+										&emsp;&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, (beginCol - i), beginRow));<br>
+										&emsp;&emsp;}<br>
+										&emsp;}<br>
+							<br>	
+							&emsp;i = 1;<br>
+							&emsp;while (onChessboard(beginCol, (beginRow + i)) && freeSquare(board, beginCol, (beginRow + i))) {<br>
+								&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, beginCol, (beginRow + i)));<br>
+								&emsp;&emsp;i++;<br>
+								&emsp;}<br>
+								&emsp;if (onChessboard(beginCol, (beginRow + i))) {<br>
+									&emsp;&emsp;if (board.squares[beginCol][(beginRow + i)].getColor() == oppColor) {<br>
+										&emsp;&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, beginCol, (beginRow + i)));<br>
+										&emsp;&emsp;}<br>
+										&emsp;}<br>
+							<br>	
+							&emsp;i = 1;<br>
+							&emsp;while (onChessboard(beginCol, (beginRow - i)) && freeSquare(board, beginCol, (beginRow - i))) {<br>
+								&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, beginCol, (beginRow - i)));<br>
+								&emsp;&emsp;i++;<br>
+								&emsp;}<br>
+								&emsp;&emsp;if (onChessboard(beginCol, (beginRow - i))) {<br>
+									&emsp;&emsp;&emsp;if (board.squares[beginCol][(beginRow - i)].getColor() == oppColor) {<br>
+										&emsp;&emsp;possibleMoves.add(new Move(beginCol, beginRow, beginCol, (beginRow - i)));<br>
+										&emsp;&emsp;}<br>
+										&emsp;}<br>
+						}<br>
+					</p>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">Jakub Sokołowski 2023</footer>
+		<script src="script.js"></script>
+  </body>
+</html>

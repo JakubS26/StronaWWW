@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+	<link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+	<title>Jakub Sokołowski - strona główna</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body class="body">
+	<header class="header">Jakub Sokołowski &nbsp; <button class="hamburger">MENU</button> </header>
+	<nav class="topnav" id="main_menu">
+			<button class="close_menu_button" id="close_menu">X</button>
+            &nbsp;
+			<div class="menu_item"><a href="index.html">Strona&nbsp;główna</a></div>
+			&nbsp; &nbsp;
+			<div class="menu_item"><a href="projekty.html">Zrealizowane&nbsp;projekty</a></div>
+			&nbsp; &nbsp;
+			<div class="menu_item current_link"><a href="informatyka.html">Zainteresowania&nbsp;informatyczne</a></div>
+			&nbsp; &nbsp;
+            <div class="menu_item"><a href="hobby.html">Inne&nbsp;zainteresowania</a></div>
+            &nbsp;
+		</nav>
+		<noscript>
+			<div class="noscript_nav">
+				&nbsp;
+				<div class="menu_item"><a href="index.html">Strona&nbsp;główna</a></div>
+				&nbsp; &nbsp;
+				<div class="menu_item"><a href="projekty.html">Zrealizowane&nbsp;projekty</a></div>
+				&nbsp; &nbsp;
+				<div class="menu_item current_link"><a href="informatyka.html">Zainteresowania&nbsp;informatyczne</a></div>
+				&nbsp; &nbsp;
+				<div class="menu_item"><a href="hobby.html">Inne&nbsp;zainteresowania</a></div>
+				&nbsp;
+			</div>
+		</noscript>
+  		<main>
+			<div class="my_grid">
+				<article class="grid_item1">
+					<h1>Programowanie</h1>
+					<p>
+						&nbsp;Moimi ulubionymi językami są C i C++. Oprócz tego do
+						tworzenia aplikacji często używam języka Java. Od jakiegoś czasu
+						uczę się języka programowania Go. Podczas studiowania
+						miałem też styczność z wieloma innymi językami takimi jak na przykład
+						Prolog, Python czy Haskell.
+					</p>
+				</article>
+				<!-- <img src="langs.png" alt="langs" class="grid_item2"> -->
+				<picture class="grid_box2">
+					<source media="(min-width:800px)" srcset="img/langs.png">
+					<img src="img/langs_mid.png" alt="langs" class="grid_item2">
+				</picture>
+			</div>
+			<div class="my_grid">
+				<article class="grid_item1">
+					<h1>Symulacje komputrowe</h1>
+					<p>&nbsp; Do moich zainteresowań informatycznych należą również
+						symulacje komputerowe. W przeszłości napisałem kilka symulacji
+						prostych zjawisk fizycznych takich jak ruch wahadła czy sprężyny.
+						Stworzyłem też program w Javie, który symlował rozprzestrzenianie się
+						chorób w sposób podobny do modelu SIR.
+						Na studiach w ramach przedmiotu <i>Technologie sieciowe</i> tworzyliśmy
+						również symulację sieci komputerowej, służącą do testowania niezawodności 
+						sieci.  
+					</p>
+				</article>
+				<!-- <img src="simulation.png" alt="simulation" class="grid_item2"> -->
+				<picture class="grid_box2">
+					<source media="(min-width:800px)" srcset="img/simulation.png">
+					<img src="img/simulation_mid.png" alt="simulation" class="grid_item2">
+				</picture>
+			</div>
+			<div class="my_grid">
+				<article class="grid_item1">
+					<h1>Teoria grafów</h1>
+					<p>&nbsp; Jest to to jedna z moich ulubionych dziedzin matematyki, która
+						ma wiele zastosowań również w informatyce. Grafy mogą służyć do
+						modelowania zagadnień z różnych dziedzin takich jak biologia, fizyka
+						czy nawet nauki społeczne. Za najciekawsze zagadnienia tej dziedziny uważam 
+						różnego rodzaju problemy optymalizacyje związane z grafami, na przykład
+						problem najkrótszych ścieżek, maksymalne przepływy w sieciach czy
+						problem komiwojażera oraz algorytmy służące do ich rozwiązywania.
+				</article>
+				<!-- <img src="graph.png" alt="graph" class="grid_item2"> -->
+				<picture class="grid_box2">
+					<source media="(min-width:800px)" srcset="img/graph.png">
+					<img src="img/graph_mid.png" alt="graph" class="grid_item2">
+				</picture>
+			</div>
+		</main>
+		<footer class="footer">Jakub Sokołowski 2023</footer>
+		<script src="script.js"></script>  
+  </body>
+</html>
