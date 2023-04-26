@@ -543,6 +543,10 @@ html {
   overflow: scroll;
 }
 
+.travel_photo {
+	max-width: 60vw;
+}
+
 @media only screen and (min-width: 800px) {
   .travel_photo {
     max-width: 60vw;
